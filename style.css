@@ -95,3 +95,10 @@ font-size: 30px;
 font-weight: bold;
 cursor:pointer;
 }
+p{
+    font-size:40px;
+    position:absolute;
+    color:white;
+    font-family: 'Dancing Script',cursive;
+    margin-top:120px;
+}
