@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.main,.on {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    background:linear-gradient(rgb(214, 208, 208,.2),rgb(228, 3, 3,.2),green),url(anjali1.jpg);
+    background-size:cover;
+}
+#own{
+    background:linear-gradient(rgb(214, 208, 208,.2),rgb(228, 3, 3,.2),green),url(anjali2.png);
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.pic{
+    border-radius: 50%;
+    height:320px;
+    width:320px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    margin-top:-500px;
+    background:linear-gradient(white,rgb(255, 0, 0),rgb(255, 94, 0),rgb(215, 255, 192),rgb(0, 255, 106),rgb(0, 255, 191),gray,rgb(0, 255, 242),rgb(0, 140, 255),rgb(0, 60, 255),rgb(119, 0, 255),rgb(179, 0, 255),rgb(255, 0, 236),rgb(255, 0, 242),black);
+    border:.1px solid yellow;
+    animation-name:rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.picture{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    position:center;
+    border-radius: 50%;
+    border:1px solid yellow;
+    margin-top:-500px;
+    position:absolute;
+}
+.vibrate{
+width:150px;
+height:50px;
+margin-top:200px;
+border:2px solid black;
+border-radius: 20px;
+position:absolute;
+background:transparent;
+font-size: 40px;
+font-weight: bold;
+cursor:pointer;
+}
+.active{
+width:160px;
+height:55px;
+margin-top:200px;
+border:3px solid rgb(0, 238, 255);
+border-radius: 23px;
+font-size: 45px;
+font-weight: bold;
+transition:.3s;
+background:rgba(255, 0, 0, 0.6);
+color:yellow;
+}
+.deactive{
+    display:none;
+}
+.name{
+    color:Red;
+    margin-top:500px;
+    font-size: 70px;
+    text-shadow: -5px 0px 8px yellow;
+    font-family: 'Dancing Script',cursive;
+    white-space: nowrap;
+}
+.bt{
+width:320px;
+height:50px;
+border:2px solid black;
+border-radius: 20px;
+position:absolute;
+background:transparent;
+font-size: 30px;
+font-weight: bold;
+cursor:pointer;
+}
