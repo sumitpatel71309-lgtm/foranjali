@@ -1,8 +1,14 @@
 *{
     margin: 0;
     padding:0;
+    box-sizing:border-box;
 }
-.main,.on {
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main,.on,.journey,.age-calculator{
     width:100vw;
     height:100vh;
     display:flex;
@@ -34,10 +40,8 @@
     margin-top:-500px;
     background:linear-gradient(white,rgb(255, 0, 0),rgb(255, 94, 0),rgb(215, 255, 192),rgb(0, 255, 106),rgb(0, 255, 191),gray,rgb(0, 255, 242),rgb(0, 140, 255),rgb(0, 60, 255),rgb(119, 0, 255),rgb(179, 0, 255),rgb(255, 0, 236),rgb(255, 0, 242),black);
     border:.1px solid yellow;
-    animation-name:rotate;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation:rotate 2s linear infinite;
+    
 }
 .picture{
     width:300px;
@@ -101,4 +105,239 @@ p{
     color:white;
     font-family: 'Dancing Script',cursive;
     margin-top:120px;
+}
+.text{
+    font-family: 'Poppins';
+    position:absolute;
+    margin-bottom:100px;
+    font-weight:bold;
+    font-size:40px;
+    animation:smltobig-text 3s forwards;
+}
+.data{
+    font-family: 'Poppins';
+    position:relative;
+    font-size:55px;
+    white-space: nowrap;
+    /* margin-top:250px; */
+    animation:smltobig-data 3s forwards;
+}
+@keyframes smltobig-text{
+   0%{
+        font-size:1px;
+    }
+    100%{
+        font-size:22px;
+        color:rgb(251, 255, 0);
+    }
+}
+@keyframes smltobig-data{
+    0%{
+        font-size:1px;
+    }
+    100%{
+        font-size:33px;
+        color:rgb(251, 255, 0);
+    }
+}
+.tt{
+
+height:60px;
+width:300px;
+border-radius:40px;
+margin-bottom:10px;
+display:flex;
+align-items:center;
+color:yellow;
+text-shadow: 3px 4px 6px solid red;
+font-family: 'Poppines';
+font-size:40px;
+font-weight:bold;
+}
+.memory-container{
+   background:rgb(4, 4, 19);
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+   align-items: center;
+   height:100vh;
+   width:100vw;
+}
+.star,.staa{
+    width:14px;
+    height:14px;
+    background-color:aqua;
+    margin-left:50px;
+    border-radius:50%;
+    box-shadow: 2px -5px 10px aqua;
+    animation: moves 5s linear infinite;
+    display:flex;
+}
+.sta, .starr{
+    width:12px;
+    height:12px;
+    background-color:aqua;
+    margin-left:30px;
+    border-radius:50%;
+    display:flex;
+    box-shadow: 2px -5px 10px aqua;
+    animation: move 5s linear infinite; 
+}
+.starr{
+    animation: movess 5s linear infinite; 
+}
+.staa{
+    animation: movesss 5s linear infinite; 
+}
+.moon{
+    width:100px;
+    height:100px;
+    background:white;
+    position:absolute;
+    border-radius:50%;
+    margin-bottom:660px;
+    margin-left:250px;
+    display:flex;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+.mainn{
+    width:350px;
+    height:350px;
+    position:absolute;
+    background:conic-gradient(rgb(50, 164, 245), rgb(221, 25, 235), rgb(15, 15, 46),rgb(22, 44, 55),red,rgb(0, 204, 254),rgb(45, 70, 114),yellow,rgb(36, 209, 171));
+    border-radius:50%;
+    border-right:12px solid rgb(255, 0, 251);
+    /* box-shadow:0px 0px 50px aqua; */
+    animation:spin 3s linear infinite , blow 10s linear infinite;
+    margin-bottom:190px;
+}
+.mains{
+    width:350px;
+    height:350px;
+    position:absolute;
+    background:rgb(4, 4, 19);
+    box-shadow:0px 0px 50px aqua;
+    border-radius:50%;
+    margin-bottom:190px;
+}
+.pics{
+    width:350px;
+    height:350px;
+    object-fit: cover;
+    border-radius: 50%;
+    position:absolute;
+}
+.letter{
+    font-size:36px;
+    font-family: 'Poppines';
+}
+@keyframes blow{
+ 0%{box-shadow:0px 0px 20px aqua;
+}
+ 10%{box-shadow:0px 0px 30px aqua;
+}
+20%{box-shadow:0px 0px 50px rgb(255, 94, 0);
+}
+30%{box-shadow:0px 0px 50px rgb(255, 166, 0);
+}
+40%{box-shadow:0px 0px 50px rgb(217, 255, 0);
+}
+50%{box-shadow:0px 0px 50px aqua;
+}
+60%{box-shadow:0px 0px 40px rgb(164, 190, 16);
+}
+70%{box-shadow:0px 0px 50px rgb(25, 233, 6);
+}
+80%{box-shadow:0px 0px 40px rgb(0, 140, 255);
+}
+90%{box-shadow:0px 0px 50px rgb(204, 0, 255);
+}
+100%{box-shadow:0px 0px 50px aqua;
+}
+}
+@keyframes move{
+    0%{
+        margin-bottom:900px;
+    }
+    50%{
+        margin-top:100px;
+    }
+    100%{
+        margin-top:900px;
+    }
+}
+@keyframes moves{
+    
+    0%{
+        margin-top:900px;
+    }
+    50%{
+        margin-bottom:100px;
+    }
+    100%{
+        margin-bottom:900px;
+    }
+}
+@keyframes movess{
+    0%{
+        margin-bottom:450px;
+    }
+    50%{
+        margin-top:100px;
+    }
+    100%{
+        margin-top:900px;
+    }
+}
+@keyframes movesss{
+    0%{
+        margin-bottom:600px;
+    }
+    50%{
+        margin-top:px;
+    }
+    100%{
+        margin-top:200px;
+    }
+}
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.wish{
+    color:yellow;
+    font-size:30px;
+    display:flex;
+    position:absolute;
+    margin-bottom:800px;
+    justify-content: center;
+    font-weight:bold;
+    font-family: Poppins;
+}
+.mainwish{
+    color:yellow;
+    font-size:16px;
+    display:flex;
+    position:absolute;
+    margin-top:600px;
+    justify-content: center;
+    font-weight:bold;
+    font-family: Poppins;
+}
+.wishm{
+    color:rgb(34, 255, 0);
+    font-size:32px;
+    display:flex;
+    position:absolute;
+    margin-top:350px;
+    justify-content: center;
+    font-weight:bold;
+    font-family: Dancing Script;
+}
+.age-calculator, .journey, .memory-container {
+    display: none;
 }
